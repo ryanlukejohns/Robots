@@ -1,0 +1,124 @@
+<!--Princeton SoA Robots Definitions - Ryan Luke Johns / 2017 / ryan@greyshed.com-->
+
+<RobotSystems>
+ <RobotCell name="SoA-IRB7600" manufacturer="ABB">
+    <Mechanisms>
+      <RobotArm model="IRB7600-255" manufacturer="ABB" payload="400">
+        <Base x="0.000" y="0.000" z="0.000" q1="1.000" q2="0.000" q3="0.000" q4="0.000"/>
+        <Joints>
+          <Revolute number="1" a ="410" d ="780" minrange = "-180" maxrange ="180" maxspeed ="75"/>
+          <Revolute number="2" a ="1075" d ="0" minrange = "-60" maxrange ="85" maxspeed ="60"/>
+          <Revolute number="3" a ="165" d ="0" minrange = "-180" maxrange ="60" maxspeed ="60"/>
+          <Revolute number="4" a ="0" d ="1056" minrange = "-300" maxrange ="300" maxspeed ="100"/>
+          <Revolute number="5" a ="0" d ="0" minrange = "-100" maxrange ="100" maxspeed ="100"/>
+          <Revolute number="6" a ="0" d ="250" minrange = "-300" maxrange ="300" maxspeed ="160"/>
+        </Joints>
+      </RobotArm>
+    </Mechanisms>
+    <IO>
+      <DO names="DO1,DO2,DO3,DO4,DO5,DO6,DO7,DO8,DO9,DO10,DO11,DO12,DO13,DO14,DO15,DO16,OUTLET1,OUTLET2"/>
+      <DI names="DI1,DI2,DI3,DI4,DI5,DI6,DI7,DI8,DI9,DI10,DI11,DI12,DI13,DI14,DI15,DO16"/>
+    </IO>
+  </RobotCell>
+
+ <RobotCell name="SoA-IRB120" manufacturer="ABB">
+    <Mechanisms>
+      <RobotArm model="IRB120" manufacturer="ABB" payload="3">
+        <Base x="0.000" y="0.000" z="0.000" q1="1.000" q2="0.000" q3="0.000" q4="0.000"/>
+        <Joints>
+          <Revolute number="1" a ="0" d ="290" minrange = "-165" maxrange ="165" maxspeed ="250"/>
+          <Revolute number="2" a ="270" d ="0" minrange = "-110" maxrange ="110" maxspeed ="250"/>
+          <Revolute number="3" a ="70" d ="0" minrange = "-110" maxrange ="70" maxspeed ="250"/>
+          <Revolute number="4" a ="0" d ="302" minrange = "-160" maxrange ="160" maxspeed ="320"/>
+          <Revolute number="5" a ="0" d ="0" minrange = "-120" maxrange ="120" maxspeed ="320"/>
+          <Revolute number="6" a ="0" d ="72" minrange = "-400" maxrange ="400" maxspeed ="420"/>
+        </Joints>
+      </RobotArm>
+    </Mechanisms>
+    <IO>
+      <DO names="DO1,DO2,DO3,DO4,DO5,DO6,DO7,DO8,DO9,DO10,DO11,DO12,DO13,DO14,DO15,DO16"/>
+      <DI names="DI1,DI2,DI3,DI4,DI5,DI6,DI7,DI8,DI9,DI10,DI11,DI12,DI13,DI14,DI15,DO16"/>
+    </IO>
+  </RobotCell>
+
+  <RobotCell name="SoA-IRB4600" manufacturer="ABB">
+    <Mechanisms group="0">
+       <RobotArm model="IRB4600-255" manufacturer="ABB" payload="40">
+        <Base x="0.000" y="0.000" z="0.000" q1="1.000" q2="0.000" q3="0.000" q4="0.000"/>
+        <Joints>
+          <Revolute number="1" a ="175" d ="495" minrange = "-180" maxrange ="180" maxspeed ="175"/>
+          <Revolute number="2" a ="1095" d ="0" minrange = "-90" maxrange ="150" maxspeed ="175"/>
+          <Revolute number="3" a ="175" d ="0" minrange = "-180" maxrange ="75" maxspeed ="175"/>
+          <Revolute number="4" a ="0" d ="1270" minrange = "-400" maxrange ="400" maxspeed ="250"/>
+          <Revolute number="5" a ="0" d ="0" minrange = "-125" maxrange ="120" maxspeed ="250"/>
+          <Revolute number="6" a ="0" d ="135" minrange = "-400" maxrange ="400" maxspeed ="360"/>
+        </Joints>
+      </RobotArm>
+
+ 	<Track model="IRBT4004-39" manufacturer="ABB" payload="100" movesRobot="true">
+        <Base x="3695.65" y="3451.77" z="23.1866" q1="0.000379853" q2="0.00136696" q3="0.00128836" q4="-0.999998"/>
+        <Joints>
+          <Prismatic number="7" a ="0" d ="0" minrange = "0" maxrange ="3900" maxspeed ="2000"/>
+        </Joints>
+      </Track>
+
+    </Mechanisms>
+
+    <Mechanisms group="1">
+       <RobotArm model="IRB4600-255" manufacturer="ABB" payload="40">
+        <Base x="0.000" y="0.000" z="0.000" q1="1.000" q2="0.000" q3="0.000" q4="0.000"/>
+        <Joints>
+          <Revolute number="1" a ="175" d ="495" minrange = "-180" maxrange ="180" maxspeed ="175"/>
+          <Revolute number="2" a ="1095" d ="0" minrange = "-90" maxrange ="150" maxspeed ="175"/>
+          <Revolute number="3" a ="175" d ="0" minrange = "-180" maxrange ="75" maxspeed ="175"/>
+          <Revolute number="4" a ="0" d ="1270" minrange = "-400" maxrange ="400" maxspeed ="250"/>
+          <Revolute number="5" a ="0" d ="0" minrange = "-125" maxrange ="120" maxspeed ="250"/>
+          <Revolute number="6" a ="0" d ="135" minrange = "-400" maxrange ="400" maxspeed ="360"/>
+        </Joints>
+      </RobotArm>
+
+ 	<Track model="IRBT4004-39" manufacturer="ABB" payload="100" movesRobot="true">
+        <Base x="0.000" y="0.000" z="0.000" q1="1.000" q2="0.000" q3="0.000" q4="0.000"/>
+        <Joints>
+          <Prismatic number="7" a ="0" d ="0" minrange = "0" maxrange ="3900" maxspeed ="2000"/>
+        </Joints>
+      </Track>
+
+    </Mechanisms>
+
+    <IO>
+      <DO names="DO1,DO2,DO3,DO4,DO5,DO6,DO7,DO8,DO9,DO10,DO11,DO12,DO13,DO14,DO15,DO16,OUTLET1,OUTLET2"/>
+      <DI names="DI1,DI2,DI3,DI4,DI5,DI6,DI7,DI8,DI9,DI10,DI11,DI12,DI13,DI14,DI15,DO16"/>
+    </IO>
+  </RobotCell>
+
+
+
+  <RobotCell name="SoA-UR3" manufacturer="UR">
+    <Mechanisms>
+      <RobotArm model="UR3" manufacturer="UR" payload="3">
+        <Base x="0.000" y="0.000" z="0.000" q1="1.000" q2="0.000" q3="0.000" q4="0.000"/>
+        <Joints>
+          <Revolute number="1" a ="0" d ="151.9" minrange = "-360" maxrange ="360" maxspeed ="180"/>
+          <Revolute number="2" a ="-243.65" d ="0" minrange = "-360" maxrange ="360" maxspeed ="180"/>
+          <Revolute number="3" a ="-213.25" d ="0" minrange = "-360" maxrange ="360" maxspeed ="180"/>
+          <Revolute number="4" a ="0" d ="110.4" minrange = "-360" maxrange ="360" maxspeed ="360"/>
+          <Revolute number="5" a ="0" d ="83.4" minrange = "-360" maxrange ="360" maxspeed ="360"/>
+          <Revolute number="6" a ="0" d ="82.4" minrange = "-INF" maxrange ="INF" maxspeed ="360"/>
+          <!--These listed values do not match the CAD model of the robot, from the UR site, so have been changed as above
+          <Revolute number="4" a ="0" d ="112.35" minrange = "-360" maxrange ="360" maxspeed ="360"/>
+          <Revolute number="5" a ="0" d ="85.35" minrange = "-360" maxrange ="360" maxspeed ="360"/>
+          <Revolute number="6" a ="0" d ="81.9" minrange = "-INF" maxrange ="INF" maxspeed ="360"/>
+      		-->
+        </Joints>
+      </RobotArm>
+    </Mechanisms>
+    <IO>
+      <DO names="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+      <DI names="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+      <AO names="0,1"/>
+      <AI names="0,1"/>
+    </IO>
+  </RobotCell>
+
+</RobotSystems>
